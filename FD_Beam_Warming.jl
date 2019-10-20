@@ -1,4 +1,5 @@
 using Plots
+#using PyPlot
 
 h = 0.01
 lambda = .5
@@ -19,6 +20,7 @@ Nfine = length(xfine)
 N = length(x)
 M = length(t)
 
+A = zeros(N-1,N-1)
 A1 = zeros(N-1,N-1)
 for j in 1:N-1
     A1[j,j] = 1
@@ -61,7 +63,7 @@ plot(x,w)
 
 for i in 2:M
     b[1] = c*(a/h)*sin(t[i-1])
-    u[:] = u[:] .+ k.A*A*u[:] .+ k*b
+    u[:] = u[:] .+ k.*A*u[:] .+ k*b
     w = [c*sin(t[i]);u]
 
     exact = zeros(Nfine)
