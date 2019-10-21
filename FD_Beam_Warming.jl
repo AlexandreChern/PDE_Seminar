@@ -1,7 +1,7 @@
 using PyPlot
 
-h = 0.05
-lambda = .5
+h = 0.01
+lambda = 4
 k = lambda*h
 
 T = 2
