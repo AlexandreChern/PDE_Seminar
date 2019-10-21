@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 using Plots
 #using PyPlot
+=======
+using PyPlot
+>>>>>>> 6a330b08d36649033ca6998e295db6fa1b168320
 
-h = 0.01
+h = 0.05
 lambda = .5
 k = lambda*h
 
@@ -54,7 +58,7 @@ A = A1 + (-a*k/(2h))*A2 + (a^2*k^2/(2*h^2))*A3
 
 b = zeros(N-1,1)
 
-u = sin.(pi*x[2:N])
+u = sin.(2*pi*x[2:N])
 
 w = [c*sin.(t[1]);u]
 
@@ -75,6 +79,6 @@ for i in 2:M
         end
     end
     plot(x,w)
-    pause(1)
+    pause(2)
     clf()
 end
