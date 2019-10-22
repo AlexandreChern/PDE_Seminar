@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+using Plots
+#using PyPlot
+=======
 using PyPlot
+>>>>>>> 6a330b08d36649033ca6998e295db6fa1b168320
 
 h = 0.01
 lambda = 4
