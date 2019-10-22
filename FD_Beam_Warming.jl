@@ -5,8 +5,8 @@ using Plots
 using PyPlot
 >>>>>>> 6a330b08d36649033ca6998e295db6fa1b168320
 
-h = 0.05
-lambda = .5
+h = 0.01
+lambda = 4
 k = lambda*h
 
 T = 2
